@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/page.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>About-page</title>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="logo">
+                <span class="fa fa-computer"></span>
+            Portofolio
+            </div>
+            <ul class="nav-list">
+                <li class="nav-item"><a href="/index.html" class="nav-links">
+                    <span class="nav-text">Home</span>
+                    <span class="nav-icon fa fa-home"></span>
+                </a></li>
+                <li class="nav-item"><a href="about.html" class="nav-links">
+                    <span class="nav-text">About</span>
+                    <span class="nav-icon fa fa-info"></span>
+                </a></li>
+                <li class="nav-item"><a href="portofolio.html" class="nav-links">
+                    <span class="nav-text">Portofolio</span>
+                    <span class="nav-icon fa fa-car-tunnel"></span>
+                </a></li>
+                <li class="nav-item"><a href="article.html" class="nav-links">
+                    <span class="nav-text">Article</span>
+                    <span class="nav-icon fa fa-newspaper"></span>
+                </a></li>
+            </ul>
+        </nav>
+
+        <section class="section-about" style="background-image: url('assets/img/bg.jpg');background-size:cover;background-repeat:no-repeat;background-position:center;">
+            <div class="row justify-content-center">
+                <div class="about-description">
+                    <h3 class="title">Fazlu Rachman</h1>
+                    <p class="about-desc">Hi there... My name is Fazlu Rachman. I am a student majoring in information systems who are interested and want to learn many things about programming, especially in web development.</p>
+                    <div class="row about-link justify-content-between mb-3">
+                        <div class="location">
+                            <span class="fa fa-map-marker-alt"></span>
+                            <span>Kec kota baru, kota jambi.</span>
+                        </div>
+                        <div class="social-media">
+                            <div class="soc github mb-1">
+                                <p class="fa fa-brands fa-github"></p> 
+                                <span>Github</span>
+                            </div>
+                            <div class="soc linkedIn mb-1">
+                                <p class="fa fa-brands fa-linkedin"></p>
+                                <span>LinkedIn</span>
+                            </div>
+                            <div class="soc instagram">
+                                <p class="fa fa-brands fa-instagram"></p> 
+                                <span>Instagram</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="assets/img/profil3.jpeg" alt="">
+                </div>
+            </div>
+        </section>
+
+
+        <section class="educations mt-3 mb-3">
+            <fieldset>
+                <legend class="title text-center">Educations</legend>
+                <div class="row justify-content-between">
+                    <div class="card-timeline">
+                        <img src="assets/img/unama.png" alt="">
+                        <div class="timeline-caption">
+                            <p class="timeline-title">
+                                Universitas Dinamika Bangsa Jambi
+                            </p>
+                            <p class="timeline-description">
+                                Kota jambi, thehok
+                            </p>
+                        </div>
+                    </div>
+                    <div class="date">
+                        2019 - 2023
+                    </div>
+            </div>
+            <hr>
+            <div class="row justify-content-between">
+                <div class="card-timeline">
+                    <img src="assets/img/sma.png" alt="">
+                    <div class="timeline-caption">
+                        <p class="timeline-title">
+                            SMA Negeri 8
+                        </p>
+                        <p class="timeline-description">
+                            Kenali Asam Bawah, Kota Jambi.
+                        </p>
+                    </div>
+                </div>
+                <div class="date">
+                    2017 - 2019
+                </div>
+            </div>
+            <hr>
+            <div class="row justify-content-between">
+                <div class="card-timeline">
+                    <img src="assets/img/sma.png" alt="">
+                    <div class="timeline-caption">
+                        <p class="timeline-title">
+                            SMP Negeri 24
+                        </p>
+                        <p class="timeline-description">
+                            Vila, Jambi.
+                        </p>
+                    </div>
+                </div>
+                <div class="date">
+                    2014 - 2016
+                </div>
+            </div>
+            <hr>
+            <div class="row justify-content-between">
+                <div class="card-timeline">
+                    <img src="assets/img/sma.png" alt="">
+                    <div class="timeline-caption">
+                        <p class="timeline-title">
+                            SD Negeri 206
+                        </p>
+                        <p class="timeline-description">
+                            Kenali Asam Bawah, Kota Jambi.
+                        </p>
+                    </div>
+                </div>
+                <div class="date">
+                    2007 - 2013
+                </div>
+            </div>
+            </fieldset>
+        </section>
+
+        <main class="page" style="background-image: url('assets/img/contact2.png');background-size:cover;background-repeat:no-repeat;background-position:center;background-attachment: fixed;">
+            <div class="contact w-70">
+                <h1 class="text-title text-crimson text-center">
+                    Contact Me
+                </h1>
+                <form action="#">
+                    <div class="form-group text-center">
+                        <label class="text-primary text-center d-block" for="name">Full Name</label>
+                        <input required class="bg-primary" type="text" placeholder="your name..." name="name" id="name">
+                    </div>
+                    <div class="form-group text-center">
+                        <label class="text-primary text-center d-block" for="email">Email</label>
+                        <input required class="bg-primary" type="email" placeholder="your email..." name="email" id="email">
+                    </div>
+                    <div class="form-group text-center">
+                        <label class="text-primary text-center d-block"  for="message">Message</label>
+                        <textarea class="bg-primary" name="message" placeholder="your message..." id="message" cols="3" rows="1"></textarea>
+                    </div>
+                    <div class="form-group text-center">
+                        <button type="submit" class="btn-md">Send Message</button>
+                    </div>
+                </form>
+                </div>
+        </main>
+
+        <footer class="w-100 bg-secondary d-flex justify-content-center align-items-center">
+           <p class="text-primary"><span class="fa fa-copyright"></span> Copyright | Fazlu Rachman</p>
+        </footer>
+    </div>
+</body>
+</html>

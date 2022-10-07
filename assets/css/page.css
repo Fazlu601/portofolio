@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('component.css');
+
+
+*, html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: var(--primary-color);
+}
+
+nav {
+    width: 100%;
+    padding: 5px;
+    position: sticky;
+    top: 0;
+    background-color: var(--primary-color);
+    border-bottom: 5px solid var(--secondary-color);
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.logo {
+    font-size: 25px;
+    padding: 3px;
+    color: var(--secondary-color);
+    letter-spacing: 3px;
+    font-weight: 700;
+    margin-left: 30px;
+    text-transform: uppercase;
+}
+
+.logo > span.fa.fa-computer {
+    color: var(--third-color);
+}
+ul.nav-list {
+    display: flex;
+    list-style: none;
+}
+li.nav-item {
+    padding: 10px;
+    margin: 0 20px;
+}
+li.nav-item:hover a.nav-links {
+    background-color: var(--third-color);
+    color: var(--primary-color);
+}
+
+a.nav-links {
+    padding: 10px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--secondary-color)
+}
+.nav-icon {
+    display: none !important;
+}
+
+
+main.page, section.section-about, section.skills {
+    padding: 30px 20px;
+}
+
+.contact {
+    background-color: rgba(0, 0, 0, 0.8);
+    margin: 30px auto;
+    border-radius: 13px;
+    box-shadow:  13px 13px 38px #c1c1c1,
+                 -13px -13px 38px #ffffff;
+    padding: 30px 0;
+}
+
+h1.text-title {
+    font-size: 30px;
+}
+
+.form-group {
+    margin: 20px 0;
+}
+
+
+input{
+    width: 500px;
+    padding: 8px;
+    font-size: 16px;
+    border-width: 1px;
+    border-radius: 8px;
+    border-bottom: 3px solid var(--third-color);
+}
+
+input:focus, textarea:focus {
+    outline: none;
+}
+
+textarea {
+    width: 500px;
+    resize: none;
+    height: 150px;
+    padding: 8px;
+    border-radius: 8px;
+    font-size: 16px;
+    border-bottom: 3px solid var(--third-color);
+}
+
+
+.row > .about-description {
+    flex-basis: 40%;
+    margin-right: 50px;
+    color: var(--primary-color);
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.row > .about-image {
+    flex-basis: 200px;
+}
+.about-image > img {
+    border-radius: 10px;
+    box-shadow:  14px 14px 0px rgba(0, 0, 0, 0.8);
+    width: 100%;
+}
+
+
+
+.about-desc {
+    font-size: 14px;
+}
+.soc {
+    cursor: pointer;
+}
+.soc:hover {
+    color: tomato;
+}
+
+section.skills > fieldset > .title {
+    font-weight: 700;
+}
+
+
+
+section.educations {
+    width: 70%;
+    margin: 30px auto;
+}
+
+
+
+.btn-md.all-project {
+    background-color: var(--third-color);
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.sertificate-card {
+    flex-basis: 20%;
+    text-decoration: none;
+    margin: 0 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+.sertificate-card > img {
+    width: 100%;
+}
+
+footer {
+    height: 60px;
+}
+footer > p {
+    font-size: 16px;
+}
+
+@media screen and (max-width: 1000px) {
+    li.nav-item {
+        margin: 0 10px;
+    }
+    a.nav-links {
+        font-size: 16px;
+    }
+    .logo {
+        font-size: 20px;
+        padding: 8px;
+    }
+    .card {
+        text-align: center;
+    }
+    a.sertificate-card {
+        flex-basis:350px;
+        margin: 10px;
+    }
+    a.btn-outline, a.btn-outline-yellow {
+        margin: 10px 0;
+        display: block;
+    }
+    input, textarea {
+        width: 85%;
+    }
+    
+}
+@media screen and (max-width: 780px) {
+    li.nav-item {
+        margin: 0;
+    }
+    a.sertificate-card {
+        flex-basis: 300px;
+        margin: 10px;
+    }
+    section.section-about {
+        margin: 50px 0 0;
+    }
+    section.section-about > .row {
+        flex-direction: column-reverse;
+    }
+    .about-description {
+      width: 100%;
+    }
+    .about-image {
+        width: 50%;
+    }
+    .row.about-link {
+        display: block;
+    }
+    .location {
+        margin: 5px 0;
+    }
+    section.educations {
+        width: 100%;
+    }
+    .card-timeline > img {
+        width: 50px;
+        margin: 10px 20px 0 10px;
+    }
+    .timeline-caption {
+        margin-top: -1px;
+    }
+    
+    p.timeline-description {
+        font-size: 12px;
+    }
+    .date {
+        font-size: 14px;
+    }
+    
+}
+
+@media screen and (max-width:680px) {
+    nav {
+        position: fixed;
+        width: 100%;
+        z-index: 9;
+        height: 60px;
+        background-color: var(--secondary-color);
+        border: 0;
+        bottom: 0;
+    }
+    ul.nav-list{
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+    section.skills {
+        margin-top: 50px;
+    }
+    .logo {
+        display: none !important;
+    }
+    a.nav-links {
+        color: var(--primary-color);
+        font-size: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .nav-icon {
+        display: inline-block !important;
+    }
+    .nav-text {
+        display: none !important;
+    }
+    .card {
+        flex-basis: 200px;
+    }
+    .card-icons {
+        width: 100px;
+    }
+    .card-icons > .img-card {
+        align-items: unset;
+        flex-basis: 20px;
+    }
+    .text-title {
+        font-size: 18px;
+    }
+    input, label {
+        font-size: 14px;
+    }
+    .card-title {
+        font-size: 14px;
+    }
+    .card-desc {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    a.sertificate-card {
+        flex-basis: 100px;
+        margin: 10px;
+    }
+    .card {
+        flex-basis: 70%;
+    }
+    .contact {
+        width: 100%;
+    }
+    .timeline-caption {
+        width: 180px;
+        align-items: stretch;
+    }
+    .timeline-title {
+        font-size: 14px;
+    }
+    
+    p.timeline-description {
+        font-size: 10px;
+    }
+    .date {
+        font-size: 10px;
+    }
+}
+
+@keyframes fadeIn {
+    0%{
+        opacity: 0;
+        transform: translateY(-20%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY();
+    }
+}

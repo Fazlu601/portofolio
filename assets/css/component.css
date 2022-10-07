@@ -1,0 +1,433 @@
+:root {
+    --primary-color : #F7F7F7;
+    --text-color : #000000;
+    --secondary-color : #1A1C20;
+    --dark-text-color : #eaeaea;
+    --third-color : crimson;
+}
+
+.text-primary {
+    color: var(--primary-color);
+}
+.text-secondary {
+    color: var(--secondary-color);
+}
+.text-crimson {
+    color: var(--third-color);
+}
+
+/* Background */
+.bg-primary {
+    background-color: var(--primary-color);
+}
+.bg-secondary {
+    background-color: var(--secondary-color);
+}
+.bg-crimson {
+    background-color: var(--third-color);
+}
+
+/* font-weight */
+.weight-low {
+    font-weight: 600;
+}
+.weight-medium {
+    font-weight: 700;
+}
+.weight-bold {
+    font-weight: bold;
+}
+
+/* Text Alignment */
+.text-center {
+    text-align: center;
+}
+.text-start {
+    text-align: start;
+}
+.text-right {
+    text-align: right;
+}
+.text-justify {
+    text-align: justify;
+}
+
+.f-wrap {
+    flex-wrap: wrap;
+}
+
+/* Row */
+.row {
+    display: flex;
+    padding: 10px;
+}
+
+/* Display */
+.d-none {
+    display: none;
+}
+.d-flex {
+    display: flex;
+}
+.d-block {
+    display: block;
+}
+.d-inline-block {
+    display: inline-block;
+}
+
+
+/* Justify flexbox */
+.justify-content-center {
+    justify-content: center;
+}
+.justify-content-between {
+    justify-content: space-between;
+}
+.justify-content-space-around {
+    justify-content: space-around;
+}
+
+/* Align flexbox */
+.align-items-center {
+    align-items: center;
+}
+.align-items-end {
+    align-items: flex-end;
+}
+.align-items-start {
+    align-items: flex-start;
+}
+
+/* Width based on layout */
+.w-100 {
+    width: 100%;
+}
+.w-90 {
+    width: 90%;
+}
+.w-80 {
+    width: 80%;
+}
+.w-70 {
+    width: 70%;
+}
+.w-60 {
+    width: 60%;
+}
+.w-50 {
+    width: 50%;
+}
+
+
+/* Margin */
+.m-1{
+    margin: 10px;
+}
+.m-2{
+    margin: 20px;
+}
+.m-3{
+    margin: 30px;
+}
+.m-4{
+    margin: 40px;
+}
+.m-5{
+    margin: 50px;
+}
+
+/* Margin top */
+.mt-1{
+    margin-top: 10px;
+}
+.mt-2{
+    margin-top: 20px;
+}
+.mt-3{
+    margin-top: 30px;
+}
+.mt-4{
+    margin-top: 40px;
+}
+.mt-5{
+    margin-top: 50px;
+}
+
+/* Margin bottom */
+
+.mb-1{
+    margin-bottom: 10px;
+}
+.mb-2{
+    margin-bottom: 20px;
+}
+.mb-3{
+    margin-bottom: 30px;
+}
+.mb-4{
+    margin-bottom: 40px;
+}
+.mb-5{
+    margin-bottom: 50px;
+}
+
+/* Margin right */
+
+.me-1{
+    margin-right: 10px;
+}
+.me-2{
+    margin-right: 20px;
+}
+.me-3{
+    margin-right: 30px;
+}
+.me-4{
+    margin-right: 40px;
+}
+.me-5{
+    margin-right: 50px;
+}
+
+/* Margin left */
+
+.ms-1{
+    margin-left: 10px;
+}
+.ms-2{
+    margin-left: 20px;
+}
+.ms-3{
+    margin-left: 30px;
+}
+.ms-4{
+    margin-left: 40px;
+}
+.ms-5{
+    margin-left: 50px;
+}
+
+/* padding */
+.p-1{
+    padding: 10px;
+}
+.p-2{
+    padding: 20px;
+}
+.p-3{
+    padding: 30px;
+}
+.p-4{
+    padding: 40px;
+}
+.p-5{
+    padding: 50px;
+}
+
+/* padding top */
+.pt-1{
+    padding-top: 10px;
+}
+.pt-2{
+    padding-top: 20px;
+}
+.pt-3{
+    padding-top: 30px;
+}
+.pt-4{
+    padding-top: 40px;
+}
+.pt-5{
+    padding-top: 50px;
+}
+
+/* padding bottop */
+
+.pb-1{
+    padding-bottom: 10px;
+}
+.pb-2{
+    padding-bottom: 20px;
+}
+.pb-3{
+    padding-bottom: 30px;
+}
+.pb-4{
+    padding-bottom: 40px;
+}
+.pb-5{
+    padding-bottom: 50px;
+}
+
+/* padding right */
+
+.pe-1{
+    padding-right: 10px;
+}
+.pe-2{
+    padding-right: 20px;
+}
+.pe-3{
+    padding-right: 30px;
+}
+.pe-4{
+    padding-right: 40px;
+}
+.pe-5{
+    padding-right: 50px;
+}
+
+/* padding left */
+
+.ps-1{
+    padding-left: 10px;
+}
+.ps-2{
+    padding-left: 20px;
+}
+.ps-3{
+    padding-left: 30px;
+}
+.ps-4{
+    padding-left: 40px;
+}
+.ps-5{
+    padding-left: 50px;
+}
+
+
+
+/* card */
+.card {
+    flex-basis: 260px;
+    border-radius: 8px;
+    margin: 10px 20px;
+    background-color: var(--primary-color);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+.card > img {
+    border-start-start-radius: 8px;
+    border-start-end-radius: 8px;
+    width: 100%;
+}
+.card-description {
+    padding: 10px;
+}
+.card-title {
+    font-size: 20px;
+    font-weight: 600;
+}
+.card-desc {
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+/* button outline */
+.btn-outline {
+    text-decoration: none;
+    background-color: none;
+    border: 2px solid crimson;
+    font-size: 14px;
+    padding: 5px;
+    color: crimson;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.btn-outline:hover {
+    background-color: crimson;
+    color: var(--primary-color);
+    transition: 0.8s;
+}
+.btn-outline-yellow {
+    text-decoration: none;
+    background-color: none;
+    border: 2px solid orangered;
+    font-size: 14px;
+    padding: 5px;
+    color: orangered;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.btn-outline-yellow:hover {
+    background-color: orangered;
+    color: var(--primary-color);
+    transition: 0.8s;
+}
+
+/* button medium */
+.btn-md {
+    background-color: crimson;
+    font-size: 16px;
+    padding: 7px;
+    color: var(--primary-color);
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+
+/* title */
+.title {
+    font-weight: 600;
+    margin: 10px 0;
+}
+/* card with icons */
+.card-icons {
+    background-color: var(--secondary-color);
+    box-shadow:  5px 5px 5px rgba(0, 0, 0, 0.8),
+                -5px -5px 5px #ffffff;
+    margin: 10px 10px;
+    width: 110px;
+    border-radius: 5px;
+    padding: 5px;
+    color: var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.card-icons:hover {
+    transform: translateY(10%);
+    transition: 1s;
+}
+.card-icons > .img-card {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-right: 5px;
+    flex-basis: 40%;
+}
+
+
+.img-caption {
+    flex-basis: 60%;
+    font-size: 12px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.img-card > img {
+    width: 100%;
+}
+
+/* card with timeline */
+.card-timeline > img {
+    width: 80px;
+    margin: 10px 20px 0 10px;
+}
+.card-timeline {
+    display: flex;
+}
+.timeline-caption {
+    margin-top: 30px;
+}
+p.timeline-title {
+    font-weight: 600;
+}
+p.timeline-description {
+    font-size: 12px;
+}
+
