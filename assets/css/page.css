@@ -257,6 +257,7 @@ footer > p {
         background-color: var(--secondary-color);
         border: 0;
         bottom: 0;
+        top: unset;
     }
     ul.nav-list{
         display: flex;
