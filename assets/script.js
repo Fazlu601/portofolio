@@ -10,7 +10,7 @@ const navButton = document.querySelectorAll('a.nav-links');
 
 
 async function getArticle() {
-    const response = await fetch('http://api.mediastack.com/v1/news?access_key=81b9b357102884bb39214d5b35ffac00');
+    const response = await fetch('https://api.mediastack.com/v1/news?access_key=81b9b357102884bb39214d5b35ffac00');
     if (!response.ok) {
         const message = `An error has occured: ${response.status}`;
         throw new Error(message);
