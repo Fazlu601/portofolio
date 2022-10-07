@@ -11,6 +11,10 @@ const navButton = document.querySelectorAll('a.nav-links');
 
 async function getArticle() {
     const response = await fetch('https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=66d0e8899e7740ce846aa4ba8ed7ea38');
+    if (!response.ok) {
+        const message = `An error has occured: ${response.status}`;
+        throw new Error(message);
+      }
     const data = await response.json();
     return data;
 }
@@ -30,7 +34,9 @@ function showArticle () {
                             </div>
                         </div>`
            parent.insertAdjacentHTML('afterbegin', text);
-        })
+        }).catch(error => {
+            error.message; // 'An error has occurred: 404'
+          });
     });
 }
 
