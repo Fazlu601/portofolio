@@ -12,6 +12,10 @@
 body {
     background-color: var(--primary-color);
 }
+.nav-active {
+    background-color: var(--third-color);
+    color: var(--primary-color) !important;
+}
 
 nav {
     width: 100%;
@@ -49,6 +53,7 @@ li.nav-item:hover a.nav-links {
     background-color: var(--third-color);
     color: var(--primary-color);
 }
+
 
 a.nav-links {
     padding: 10px;
