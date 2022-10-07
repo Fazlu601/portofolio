@@ -1,3 +1,12 @@
+const navButton = document.querySelectorAll('a.nav-links');
+
+    navButton.forEach((item)=> {
+        
+                if(item.href == window.location.href){
+                   item.classList.toggle('nav-active');
+                }
+    
+    });
 
 
 async function getArticle() {
@@ -8,17 +17,16 @@ async function getArticle() {
 
 function showArticle () {
     getArticle().then(data => {
-        data.articles.forEach((test)=> {
-            console.log(test.author, test.title);
+        data.articles.forEach((item)=> {
            const parent = document.getElementById('article');
            let text = `<div class="card project">
-                            <img src="${test.urlToImage}" alt="">
+                            <img src="${item.urlToImage}" alt="">
                             <div class="card-description">
-                                <h3 class="card-title">${test.title}</h3>
-                                <p class="card-desc">Author: ${test.author}</p>
-                                <p class="card-desc">Update: ${test.publishedAt}</p>
-                                <p class="card-desc">${test.description}</p>
-                                <a href="${test.url}" target="_blank" class="btn-outline w-100">View More <span class="fa fa-search"></span> </a>
+                                <h3 class="card-title">${item.title}</h3>
+                                <p class="card-desc">Author: ${item.author}</p>
+                                <p class="card-desc">Update: ${item.publishedAt}</p>
+                                <p class="card-desc">${item.description}</p>
+                                <a href="${item.url}" target="_blank" class="btn-outline w-100">View More <span class="fa fa-search"></span> </a>
                             </div>
                         </div>`
            parent.insertAdjacentHTML('afterbegin', text);
@@ -28,11 +36,3 @@ function showArticle () {
 
 showArticle();
 
-const navButton = document.querySelectorAll('a.nav-links');
-navButton.forEach((item)=> {
-    
-            if(item.href == window.location.href){
-               item.classList.toggle('nav-active');
-            }
-
-});
