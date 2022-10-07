@@ -19,7 +19,6 @@ async function getArticle() {
     return data;
 }
 
-function showArticle () {
     getArticle().then(data => {
         data.articles.forEach((item)=> {
            const parent = document.getElementById('article');
@@ -38,7 +37,7 @@ function showArticle () {
             error.message; // 'An error has occurred: 404'
           });
     });
-}
+
 
 showArticle();
 
