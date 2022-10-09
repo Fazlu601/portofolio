@@ -102,4 +102,4 @@ const showArticles = () => {
     return news;
 }
 
-export {DARK_KEY, getLocalStorage, showArticles}
+export {DARK_KEY, showArticles}
