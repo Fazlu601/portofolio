@@ -16,7 +16,7 @@
 nav {
     width: 560px;
     height: 100vh;
-    background-color: var(--secondary-color);
+    background-color: var(--background);
     display: flex;
     align-items: center;
 }
@@ -25,6 +25,10 @@ ul.nav-list {
     width: 100%;
     list-style: none;
     text-align: center;
+}
+
+ul.nav-list > li:first-child {
+    transform: translateY(-150%);
 }
 
 li.nav-item {
@@ -96,7 +100,7 @@ main {
 }
 
 .btn-lg:hover {
-    background-color: crimson;
+    background-color: var(--third-color);
     transition: 0.8s;
 }
 
@@ -115,12 +119,12 @@ main {
 .social-media > .soc > p {
     margin: 0 10px;
     text-decoration: none;
-    color: var(--dark-primary-color);
+    color: var(--text-color);
     cursor: pointer;
 }
 
 .social-media > .soc > span {
-    color: crimson;
+    color: var(--third-color);
     display: none;
     position: absolute;
     padding: 3px;
@@ -130,7 +134,7 @@ main {
     cursor: context-menu;
 }
 .social-media > .soc:hover > p {
-    color: crimson;
+    color: var(--third-color);
     transform: scale(1.1);
 }
 .social-media > .soc:hover > span {
@@ -196,6 +200,12 @@ main {
         display: flex;
         justify-content: space-around;
     }
+
+    ul.nav-list > li:first-child {
+        position: fixed;
+        top: 60px;
+        right: 10px;
+    }
     
     main {
         display: block;
@@ -220,7 +230,8 @@ main {
 
 @media screen and (max-width: 480px) {
     main {
-        padding-top: 50px;
+        padding-top: 30px;
+        min-height: 100vh;
     }
    
     a.nav-links {

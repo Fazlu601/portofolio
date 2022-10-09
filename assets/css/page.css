@@ -47,13 +47,19 @@ ul.nav-list {
 }
 li.nav-item {
     padding: 10px;
-    margin: 0 20px;
+    margin: 0 10px;
 }
 li.nav-item:hover a.nav-links {
     background-color: var(--third-color);
     color: var(--primary-color);
 }
 
+ul.nav-list > li:last-child {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    margin-right: 20px;
+}
 
 a.nav-links {
     padding: 10px;
@@ -70,6 +76,10 @@ a.nav-links {
 
 main.page, section.section-about, section.skills {
     padding: 30px 20px;
+}
+
+main.project {
+    min-height: 100vh !important;
 }
 
 .contact {
@@ -117,7 +127,6 @@ textarea {
 .row > .about-description {
     flex-basis: 40%;
     margin-right: 50px;
-    color: var(--primary-color);
     background-color: rgba(0, 0, 0, 0.8);
     padding: 5px;
     border-radius: 10px;
@@ -139,6 +148,9 @@ textarea {
 }
 .soc {
     cursor: pointer;
+    display: block;
+    text-decoration: none;
+    color: var(--text-bg-dark);
 }
 .soc:hover {
     color: tomato;
@@ -167,10 +179,10 @@ section.educations {
     flex-basis: 20%;
     text-decoration: none;
     margin: 0 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
 }
 .sertificate-card > img {
     width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
 }
 
 footer {
@@ -216,13 +228,14 @@ footer > p {
         margin: 10px;
     }
     section.section-about {
-        margin: 50px 0 0;
+        padding: 50px 0 0;
     }
     section.section-about > .row {
         flex-direction: column-reverse;
     }
     .about-description {
       width: 100%;
+      margin-top: 15px;
     }
     .about-image {
         width: 50%;
@@ -268,6 +281,15 @@ footer > p {
         display: flex;
         justify-content: space-around;
         width: 100%;
+    }
+    ul.nav-list > li:last-child {
+        position: fixed;
+        z-index: 9;
+        height: unset;
+        display: block;
+        top: 10px;
+        right: 10px;
+        margin: unset;
     }
     section.skills {
         margin-top: 50px;
@@ -317,7 +339,7 @@ footer > p {
         margin: 10px;
     }
     .card {
-        flex-basis: 70%;
+        flex-basis: 50%;
     }
     .contact {
         width: 100%;

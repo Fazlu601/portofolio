@@ -8,12 +8,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>About</title>
 </head>
-<body>
+<body class="dark-mode">
     <div class="container">
         <nav>
             <div class="logo">
                 <span class="fa fa-computer"></span>
-            Portofolio
+            Personal Web
             </div>
             <ul class="nav-list">
                 <li class="nav-item"><a href="/index.html" class="nav-links">
@@ -32,13 +32,19 @@
                     <span class="nav-text">Article</span>
                     <span class="nav-icon fa fa-newspaper"></span>
                 </a></li>
+                <li class="switch-mode page">
+                    <label class="switch">
+                        <input id="toggle-dark-mode" type="checkbox">
+                        <span class="slider"></span>
+                      </label>  
+                </li>
             </ul>
         </nav>
 
         <section class="section-about" style="background-image: url('assets/img/bg.jpg');background-size:cover;background-repeat:no-repeat;background-position:center;">
             <div class="row justify-content-center">
-                <div class="about-description">
-                    <h3 class="title">Fazlu Rachman</h1>
+                <div class="about-description text-bg-dark">
+                    <h3 class="mb-1">Fazlu Rachman</h1>
                     <p class="about-desc">Hi there... My name is Fazlu Rachman. I am a student majoring in information systems who are interested and want to learn many things about programming, especially in web development.</p>
                     <div class="row about-link justify-content-between mb-3">
                         <div class="location">
@@ -46,18 +52,18 @@
                             <span>Kec kota baru, kota jambi.</span>
                         </div>
                         <div class="social-media">
-                            <div class="soc github mb-1">
+                            <a href="https://github.com/Fazlu601" target="_blank" class="soc github mb-1">
                                 <p class="fa fa-brands fa-github"></p> 
                                 <span>Github</span>
-                            </div>
-                            <div class="soc linkedIn mb-1">
+                            </a>
+                            <a href="https://www.linkedin.com/in/fazlu-rachman-aaa35b245" target="_blank" class="soc linkedIn mb-1">
                                 <p class="fa fa-brands fa-linkedin"></p>
                                 <span>LinkedIn</span>
-                            </div>
-                            <div class="soc instagram">
+                            </d>
+                            <a href="https://www.instagram.com/fz_rchman06" target="_blank" class="soc instagram">
                                 <p class="fa fa-brands fa-instagram"></p> 
                                 <span>Instagram</span>
-                            </div>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -74,7 +80,7 @@
                 <div class="row justify-content-between">
                     <div class="card-timeline">
                         <img src="assets/img/unama.png" alt="">
-                        <div class="timeline-caption">
+                        <div class="timeline-caption text-default">
                             <p class="timeline-title">
                                 Universitas Dinamika Bangsa Jambi
                             </p>
@@ -83,7 +89,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="date">
+                    <div class="date text-default">
                         2019 - 2023
                     </div>
             </div>
@@ -91,7 +97,7 @@
             <div class="row justify-content-between">
                 <div class="card-timeline">
                     <img src="assets/img/sma.png" alt="">
-                    <div class="timeline-caption">
+                    <div class="timeline-caption text-default">
                         <p class="timeline-title">
                             SMA Negeri 8
                         </p>
@@ -100,7 +106,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="date">
+                <div class="date text-default">
                     2017 - 2019
                 </div>
             </div>
@@ -108,7 +114,7 @@
             <div class="row justify-content-between">
                 <div class="card-timeline">
                     <img src="assets/img/sma.png" alt="">
-                    <div class="timeline-caption">
+                    <div class="timeline-caption text-default">
                         <p class="timeline-title">
                             SMP Negeri 24
                         </p>
@@ -117,7 +123,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="date">
+                <div class="date text-default">
                     2014 - 2016
                 </div>
             </div>
@@ -125,7 +131,7 @@
             <div class="row justify-content-between">
                 <div class="card-timeline">
                     <img src="assets/img/sma.png" alt="">
-                    <div class="timeline-caption">
+                    <div class="timeline-caption text-default">
                         <p class="timeline-title">
                             SD Negeri 206
                         </p>
@@ -134,7 +140,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="date">
+                <div class="date text-default">
                     2007 - 2013
                 </div>
             </div>
@@ -148,15 +154,15 @@
                 </h1>
                 <form action="#">
                     <div class="form-group text-center">
-                        <label class="text-primary text-center d-block" for="name">Full Name</label>
+                        <label class="text-default text-center d-block" for="name">Full Name</label>
                         <input required class="bg-primary" type="text" placeholder="your name..." name="name" id="name">
                     </div>
                     <div class="form-group text-center">
-                        <label class="text-primary text-center d-block" for="email">Email</label>
+                        <label class="text-default text-center d-block" for="email">Email</label>
                         <input required class="bg-primary" type="email" placeholder="your email..." name="email" id="email">
                     </div>
                     <div class="form-group text-center">
-                        <label class="text-primary text-center d-block"  for="message">Message</label>
+                        <label class="text-default text-center d-block"  for="message">Message</label>
                         <textarea class="bg-primary" name="message" placeholder="your message..." id="message" cols="3" rows="1"></textarea>
                     </div>
                     <div class="form-group text-center">
@@ -170,6 +176,6 @@
            <p class="text-primary"><span class="fa fa-copyright"></span> Copyright | Fazlu Rachman</p>
         </footer>
     </div>
-    <script src="assets/script.js"></script>
+    <script src="assets/js/main.js" type="module"></script>
 </body>
 </html>

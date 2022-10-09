@@ -3,9 +3,29 @@
     --text-color : #000000;
     --secondary-color : #1A1C20;
     --dark-text-color : #eaeaea;
-    --third-color : crimson;
+    --background : #1A1C20;
+    --third-color : #dc143c;
 }
 
+
+:root .dark-mode {
+    --primary-color : #1A1C20;
+    --text-color : #eaeaea ;
+    --secondary-color : #F7F7F7;
+    --background : #000000;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+.text-default {
+    color: var(--text-color);
+}
+.text-bg-dark {
+    color: var(--dark-text-color);
+}
 .text-primary {
     color: var(--primary-color);
 }
@@ -316,6 +336,7 @@
 }
 .card-description {
     padding: 10px;
+    color: var(--text-color);
 }
 .card-title {
     font-size: 18px;
@@ -371,7 +392,7 @@
     background-color: crimson;
     font-size: 16px;
     padding: 7px;
-    color: var(--primary-color);
+    color: var(--text-color);
     border-radius: 8px;
     border: none;
     cursor: pointer;
@@ -382,13 +403,13 @@
 .title {
     font-weight: 600;
     margin: 10px 0;
+    color: var(--text-color);
 }
 /* card with icons */
 .card-icons {
     background-color: var(--secondary-color);
-    box-shadow:  5px 5px 5px rgba(0, 0, 0, 0.8),
-                -5px -5px 5px #ffffff;
-    margin: 10px 10px;
+    box-shadow:  5px 5px 5px rgba(0, 0, 0, 0.8);
+    margin: 10px 10px 0;
     width: 110px;
     border-radius: 5px;
     padding: 5px;
@@ -439,3 +460,49 @@ p.timeline-description {
     font-size: 12px;
 }
 
+/* Switch button */
+.switch {
+    font-size: 17px;
+    position: relative;
+    display: inline-block;
+    width: 3.5em;
+    height: 2em;
+}
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}   
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 30px;
+}   
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 1.4em;
+    width: 1.4em;
+    border-radius: 20px;
+    left: 0.3em;
+    bottom: 0.3em;
+    background-color: white;
+    transition: .4s;
+}
+input:checked + .slider {
+    background-color: #1A1C20;
+    border: 1px solid var(--secondary-color);
+}
+input:focus + .slider {
+    box-shadow: 0 0 1px #1A1C20;
+}
+
+input:checked + .slider:before {
+    transform: translateX(1.5em);
+}
