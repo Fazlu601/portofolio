@@ -13,6 +13,7 @@
     --text-color : #eaeaea ;
     --secondary-color : #F7F7F7;
     --background : #000000;
+    animation: fadeIn 1.5s;
 }
 
 html {
@@ -505,4 +506,42 @@ input:focus + .slider {
 
 input:checked + .slider:before {
     transform: translateX(1.5em);
+}
+
+@keyframes fadeIn {
+    0%{
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes zoomIn {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes slideOnRight {
+    0%{
+        opacity: 0;
+        transform: translateX(-20%);
+    }
+    100%{
+        transform: translateX();
+    }
+}
+
+@keyframes slideOnTop {
+    0%{
+        opacity: 0;
+        transform: translateX(-20%);
+    }
+    100%{
+        transform: translateX();
+    }
 }

@@ -21,6 +21,7 @@ nav {
     width: 100%;
     padding: 5px;
     position: sticky;
+    z-index: 9;
     top: 0;
     background-color: var(--primary-color);
     border-bottom: 5px solid var(--secondary-color);
@@ -180,9 +181,14 @@ section.educations {
     text-decoration: none;
     margin: 0 20px;
 }
+
 .sertificate-card > img {
     width: 100%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+.sertificate-card:hover > img {
+    outline: 3px solid var(--third-color);
 }
 
 footer {
@@ -270,7 +276,6 @@ footer > p {
     nav {
         position: fixed;
         width: 100%;
-        z-index: 9;
         height: 60px;
         background-color: var(--secondary-color);
         border: 0;
@@ -331,6 +336,10 @@ footer > p {
     .card-desc {
         font-size: 12px;
     }
+    footer {
+        padding: 5px 0 110px;
+        align-items: flex-start !important;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -357,16 +366,5 @@ footer > p {
     }
     .date {
         font-size: 10px;
-    }
-}
-
-@keyframes fadeIn {
-    0%{
-        opacity: 0;
-        transform: translateY(-20%);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY();
     }
 }

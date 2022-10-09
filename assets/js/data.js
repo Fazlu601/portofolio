@@ -91,7 +91,7 @@ const showArticles = () => {
                 <h3 class="card-title">${array.title}</h3>
                 <p class="card-desc">Author: ${array.author}</p>
                 <p class="card-desc">Update: ${array.publishedAt}</p>
-                <p class="card-desc">${array.description}</p>
+                <p class="card-desc pb-2">${array.description}</p>
                 <a href="${array.url}" target="_blank" class="btn-outline w-100">View More <span class="fa fa-search"></span> </a>
             </div>
         </div>`;
