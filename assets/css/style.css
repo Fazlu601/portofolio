@@ -240,16 +240,14 @@ main {
         padding-top: 30px;
         min-height: 100vh;
     }
+
+    nav {
+        display: none;
+    }
    
     a.nav-links {
         padding: 0 10px;
         font-size: 20px;
-    }
-    .nav-text {
-        display: none;
-    }
-    .nav-icon {
-        display: flex !important;
     }
 }
 
