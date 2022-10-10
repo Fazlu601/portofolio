@@ -200,10 +200,10 @@ footer > p {
 
 @media screen and (max-width: 1000px) {
     li.nav-item {
-        margin: 0 10px;
+        margin: unset;
     }
     a.nav-links {
-        font-size: 16px;
+        font-size: 14px;
     }
     .logo {
         font-size: 20px;
@@ -272,7 +272,7 @@ footer > p {
     
 }
 
-@media screen and (max-width:680px) {
+@media screen and (max-width:740px) {
     nav {
         position: fixed;
         width: 100%;
@@ -314,9 +314,6 @@ footer > p {
     .nav-text {
         display: none !important;
     }
-    .card {
-        flex-basis: 200px;
-    }
     .card-icons {
         width: 100px;
     }
@@ -347,9 +344,7 @@ footer > p {
         flex-basis: 100px;
         margin: 10px;
     }
-    .card {
-        flex-basis: 50%;
-    }
+    
     .contact {
         width: 100%;
     }
