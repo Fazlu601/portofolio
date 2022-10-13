@@ -19,7 +19,7 @@ body {
 
 nav {
     width: 560px;
-    height: 100vh;
+    min-height: 100vh;
     background-color: var(--background);
     display: flex;
     align-items: center;
@@ -59,9 +59,10 @@ a.nav-links {
 }
 
 main {
-    height: 100vh;
     flex-grow: 1;
-    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .row-profile {
@@ -197,22 +198,7 @@ main {
 
 @media screen and (max-width:640px) {
     nav {
-        width: 100%;
-        position: fixed;
-        bottom: 0;
-        height: 60px;
-        z-index: 9;
-        animation: unset;
-    }
-    ul.nav-list {
-        display: flex;
-        justify-content: space-around;
-    }
-
-    ul.nav-list > li:first-child {
-        position: fixed;
-        top: 60px;
-        right: 10px;
+        display: none;
     }
     
     main {
@@ -237,12 +223,7 @@ main {
 
 @media screen and (max-width: 480px) {
     main {
-        padding-top: 30px;
         min-height: 100vh;
-    }
-
-    nav {
-        display: none;
     }
    
     a.nav-links {

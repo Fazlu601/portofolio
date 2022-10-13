@@ -453,7 +453,9 @@ html {
     display: flex;
 }
 .timeline-caption {
-    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 p.timeline-title {
     font-weight: 600;
@@ -508,6 +510,7 @@ input:focus + .slider {
 input:checked + .slider:before {
     transform: translateX(1.5em);
 }
+
 
 
 /* Animation */
