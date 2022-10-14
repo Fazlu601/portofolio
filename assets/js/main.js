@@ -32,6 +32,4 @@ toggleDark.onclick = () => {
 // Call showArticles() and add for the second argument of insertAdjacentHTML to insert articles in parent element.
 parent.insertAdjacentHTML('afterbegin', showArticles());
 
-
-
-
+document.querySelector("p.footer").innerText += " " +  new Date().getFullYear();

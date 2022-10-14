@@ -88,7 +88,7 @@ const articles = [
 //Show articles in document html
 const showArticles = () => {
     let news =  articles.map(array => {
-            let text = `<div class="card project">
+            let text = `<article class="card project">
                         <img src="${array.urlToImage}" alt="">
                         <div class="card-description">
                             <h3 class="card-title">${array.title}</h3>
@@ -97,7 +97,7 @@ const showArticles = () => {
                             <p class="card-desc pb-2">${array.description}</p>
                             <a href="${array.url}" target="_blank" class="btn-outline w-100">View More <span class="fa fa-search"></span></a>
                         </div>
-                    </div>`;
+                    </article>`;
 
         return text;
     });
