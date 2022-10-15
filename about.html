@@ -10,7 +10,7 @@
     <title>About</title>
 </head>
 <body class="dark-mode">
-    <div class="container">
+    <header>
         <nav>
             <div class="logo">
                 <span class="fa fa-computer"></span>
@@ -42,9 +42,9 @@
             </ul>
         </nav>
 
-        <header class="section-about" style="background-image: url('assets/img/bg.jpg');background-size:cover;background-repeat:no-repeat;background-position:center;">
+        <section class="section-about background-about">
             <div class="row justify-content-center">
-                <div class="about-description text-bg-dark">
+                <aside class="about-description text-bg-dark">
                     <h3 class="mb-1">Fazlu Rachman</h1>
                     <p class="about-desc">Hi there... My name is Fazlu Rachman. I am a student majoring in information systems who are interested and want to learn many things about programming, especially in web development.</p>
                     <div class="row about-link justify-content-between mb-3">
@@ -67,13 +67,15 @@
                             </a>
                         </div>
                     </div>
-                </div>
+                </aside>
                 <aside class="about-image">
                     <img src="assets/img/profil3.jpeg" alt="">
                 </aside>
             </div>
-        </header>
+        </section>
+    </header>
 
+    <main class="page about-page">
         <section class="educations mt-3 mb-3">
             <fieldset>
                 <legend class="title text-center">Educations</legend>
@@ -147,7 +149,7 @@
             </fieldset>
         </section>
 
-        <main class="page" style="background-image: url('assets/img/contact2.png');background-size:cover;background-repeat:no-repeat;background-position:center;background-attachment: fixed;">
+        <section class="background-contact">
             <div class="contact w-70">
                 <h1 class="text-title text-crimson text-center">
                     Contact Me
@@ -170,12 +172,14 @@
                     </div>
                 </form>
             </div>
-        </main>
+        </section>
+
+    </main>
 
         <footer class="w-100 bg-secondary d-flex justify-content-center align-items-center">
            <p class="text-primary"><span class="fa fa-copyright"></span> Copyright | Fazlu Rachman</p>
         </footer>
-    </div>
+  
     <script src="assets/js/main.js" type="module"></script>
 </body>
 </html>

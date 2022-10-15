@@ -10,7 +10,7 @@
     <title>Portofolio</title>
 </head>
 <body>
-    <div class="container">
+    <header>
         <nav>
             <div class="logo">
                 <span class="fa fa-computer"></span>
@@ -41,7 +41,8 @@
                 </li>
             </ul>
         </nav>
-
+    </header>
+    <main class="page portofolio-page">
         <section class="skills">
             <fieldset>
                 <legend class="title text-center">
@@ -84,7 +85,6 @@
                                 <span>Laravel</span>
                             </div>
                         </div>
-                       
                     </div>
                 </div>
             </fieldset>
@@ -108,26 +108,26 @@
             </div>
         </section>
 
-        <main class="project mt-3 pt-3 pb-3" style="background-image: url('assets/img/project.png');background-size:cover;background-repeat:no-repeat;background-position:center;background-attachment: fixed;">
+        <section class="project mt-3 pt-3 pb-3 background-project" >
                 <h1 class="title text-center bg-crimson weight-bold">Project</h1>
                 <div class="row justify-content-center f-wrap">
-                    <div class="card project">
+                    <article class="card project">
                         <img src="assets/img/jordi.jpg" alt="">
                         <div class="card-description">
                             <h3 class="card-title">E-commerce variation</h3>
                             <p class="card-desc pb-2">Final report assignment RPL.</p>
                             <a href="https://github.com/Fazlu601/Tugas-Akhir-RPL-Ecommerce-JordiVariasi" target="_blank" class="btn-outline">View on GitHub</a>
                         </div>
-                    </div>
-                    <div class="card project">
+                    </article>
+                    <article class="card project">
                         <img src="assets/img/aini.jpg" alt="">
                         <div class="card-description">
                             <h3 class="card-title">Reservation Hotel</h3>
                             <p class="card-desc pb-2">Practical work research project design.</p>
                             <a href="https://github.com/Fazlu601/proyek-penelitian-reservasi-hotel-grand-aini-jambi" target="_blank" class="btn-outline">View on GitHub</a>
                         </div>
-                    </div>
-                    <div class="card project">
+                    </article>
+                    <article class="card project">
                         <img src="assets/img/simpleCommerce.jpg" alt="simple-ecommerce">
                         <div class="card-description">
                             <h3 class="card-title">Simple-Commerce</h3>
@@ -135,8 +135,8 @@
                             <a href="https://github.com/Fazlu601/simple-ecommerce" target="_blank" class="btn-outline">View on GitHub</a>
                             <a href="https://simplee-commerce.fazlurachman.repl.co/index.html" target="_blank" class="btn-outline-yellow ms-1">View on Site</a>
                         </div>
-                    </div>
-                    <div class="card project">
+                    </article>
+                    <article class="card project">
                         <img src="assets/img/bmi.png" alt="bmi">
                         <div class="card-description">
                             <h3 class="card-title">BMI-Calculator</h3>
@@ -144,8 +144,8 @@
                             <a href="https://github.com/Fazlu601/BMI-Calculator" target="_blank" class="btn-outline">View on GitHub</a>
                             <a href="https://fazlu-bmi-calculator.netlify.app/" target="_blank" class="btn-outline-yellow ms-1">View on Site</a>
                         </div>
-                    </div>
-                    <div class="card project">
+                    </article>
+                    <article class="card project">
                         <img src="assets/img/skilmovie.png" alt="bmi">
                         <div class="card-description">
                             <h3 class="card-title">TMDB Movie API</h3>
@@ -153,19 +153,20 @@
                             <a href="https://github.com/Fazlu601/skilmovie-TPA-3" target="_blank" class="btn-outline">View on GitHub</a>
                             <a href="https://fazlu-skilmovie-tpa3.netlify.app/" target="_blank" class="btn-outline-yellow ms-1">View on Site</a>
                         </div>
-                    </div>
+                    </article>
                 </div>
                 <div class="row justify-content-center">
                     <a href="https://github.com/Fazlu601?tab=repositories" target="_blank" class="btn-md all-project">
                         <span class="fa fa-brands fa-github"></span>
                         See All Project</a>
                 </div>
-        </main>
-      
+        </section>
+    </main>
+
         <footer class="w-100 bg-secondary d-flex justify-content-center align-items-center">
-           <p class="footer text-primary">&copy Copyright | Fazlu Rachman</p>
+        <p class="footer text-primary">&copy Copyright | Fazlu Rachman</p>
         </footer>
-    </div>
+
     <script src="assets/js/main.js" type="module"></script>
 </body>
 </html>

@@ -75,11 +75,11 @@ a.nav-links {
 }
 
 
-main.page, section.section-about, section.skills {
+section.section-about, section.skills {
     padding: 30px 20px;
 }
 
-main.project {
+section.project {
     min-height: 100vh !important;
 }
 
@@ -125,7 +125,7 @@ textarea {
 }
 
 
-.row > .about-description {
+.row > aside.about-description {
     flex-basis: 40%;
     margin-right: 50px;
     background-color: rgba(0, 0, 0, 0.8);
@@ -133,10 +133,10 @@ textarea {
     border-radius: 10px;
 }
 
-.row > .about-image {
+.row > aside.about-image {
     flex-basis: 200px;
 }
-.about-image > img {
+aside.about-image > img {
     border-radius: 10px;
     box-shadow:  14px 14px 0px rgba(0, 0, 0, 0.8);
     width: 100%;
@@ -233,10 +233,10 @@ footer > p {
         flex-basis: 300px;
         margin: 10px;
     }
-    header.header-about {
+    .header-about {
         padding: 50px 0 0;
     }
-    header.section-about > .row {
+    section.section-about > .row {
         flex-direction: column-reverse;
     }
     .about-description {

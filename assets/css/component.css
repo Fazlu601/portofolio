@@ -511,7 +511,29 @@ input:checked + .slider:before {
     transform: translateX(1.5em);
 }
 
+/* Background-image */
+.background-about {
+    background-image: url('../img/bg.jpg');
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+}
 
+.background-project {
+    background-image: url('../img/project.png');
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center;
+    background-attachment: fixed;
+}
+
+.background-contact {
+    background-image: url('assets/img/contact2.png');
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center;
+    background-attachment: fixed;
+}
 
 /* Animation */
 @keyframes fadeIn {
