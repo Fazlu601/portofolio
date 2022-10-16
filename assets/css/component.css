@@ -528,7 +528,7 @@ input:checked + .slider:before {
 }
 
 .background-contact {
-    background-image: url('assets/img/contact2.png');
+    background-image: url('../img/contact2.png');
     background-size:cover;
     background-repeat:no-repeat;
     background-position:center;

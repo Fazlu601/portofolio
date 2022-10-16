@@ -85,11 +85,8 @@ section.project {
 
 .contact {
     background-color: rgba(0, 0, 0, 0.8);
-    margin: 30px auto;
+    margin: 30px auto 0;
     border-radius: 13px;
-    box-shadow:  13px 13px 38px #c1c1c1,
-                 -13px -13px 38px #ffffff;
-    padding: 30px 0;
 }
 
 h1.text-title {
